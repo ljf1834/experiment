@@ -1,0 +1,26 @@
+{
+  "name": "tsm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+	"engines": {
+		"node": ">=12"
+	},
+	"files": [
+		"dist"
+	],
+  "scripts": {
+	  "build": "tsx scripts/build.ts",
+    "dev": "tsx src/index.ts",
+	  "test": "node --experimental-loader ./dist/loader.js test/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.15.16"
+  },
+	"devDependencies": {
+	}
+}

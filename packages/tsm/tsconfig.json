@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"strict": false,
+		"allowJs": true,
+		"lib": ["es2019", "dom"],
+		"target": "es2019",
+		"moduleResolution": "node",
+		"strictBindCallApply": true,
+		"allowSyntheticDefaultImports": false,
+		"forceConsistentCasingInFileNames": true,
+		"strictFunctionTypes": true,
+		"resolveJsonModule": true,
+		"strictNullChecks": true,
+		"noImplicitThis": true,
+		"noImplicitAny": true,
+		"alwaysStrict": true,
+		"module": "esnext",
+		"checkJs": true,
+		"noEmit": true,
+		"jsx": "react",
+		"types": ["node"]
+	},
+	"include": [
+		"build",
+		"test",
+		"src",
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
