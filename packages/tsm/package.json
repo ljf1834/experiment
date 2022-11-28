@@ -13,7 +13,7 @@
   "scripts": {
 	  "build": "tsx scripts/build.ts",
     "dev": "tsx src/index.ts",
-	  "test": "node --experimental-loader ./dist/loader.js test/index.ts"
+	  "test": "node --experimental-loader ./dist/loader.js ./test/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +22,8 @@
     "esbuild": "^0.15.16"
   },
 	"devDependencies": {
+	},
+	"peerDependencies": {
+		"@types/node": ">= 14"
 	}
 }
