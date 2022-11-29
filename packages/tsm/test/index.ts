@@ -1,3 +1,5 @@
-let num:number = 1;
+import { name } from "./modules/module1"
 
-console.log(num);
+let num = 1
+
+console.log(num, name)
