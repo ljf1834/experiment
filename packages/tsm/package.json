@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
 	"engines": {
-		"node": ">=12"
+		"node": ">=14"
 	},
+	"bin": "dist/bin.cjs",
 	"files": [
 		"dist"
 	],
