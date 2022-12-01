@@ -1,28 +1,31 @@
 {
-  "name": "tsm",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+	"name": "tsm",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
 	"engines": {
 		"node": ">=14"
 	},
-	"bin": "dist/bin.cjs",
+	"bin": {
+		"tsm": "./dist/bin.js"
+	},
 	"files": [
 		"dist"
 	],
-  "scripts": {
-	  "build": "tsx scripts/build.ts",
-    "dev": "tsx src/index.ts",
-	  "test": "node --experimental-loader ./dist/loader.js --trace-warnings ./test/index.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "esbuild": "^0.15.16"
-  },
+	"scripts": {
+		"build": "cross-env NODE_ENV=production tsx scripts/build.ts",
+		"dev": "cross-env NODE_ENV=development tsx scripts/build.ts",
+		"test": "node --experimental-loader ./dist/loader.js --trace-warnings ./test/index.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"esbuild": "^0.15.16"
+	},
 	"devDependencies": {
+		"cross-env": "^7.0.3"
 	},
 	"peerDependencies": {
 		"@types/node": ">= 14"

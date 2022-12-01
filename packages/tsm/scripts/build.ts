@@ -6,6 +6,5 @@ esbuild.build({
   format: 'esm',
   platform: 'node',
   target: 'node14',
-  watch: true,
-  sourcemap: true,
+  watch: process.env.NODE_ENV !== 'production'
 })
