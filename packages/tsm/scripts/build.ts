@@ -1,6 +1,6 @@
 import * as esbuild from 'esbuild'
 esbuild.build({
-  entryPoints: ['src/index.ts', 'src/loader.ts', 'src/bin.ts'],
+  entryPoints: ['src/loader.ts', 'src/bin.ts', 'src/require.ts'],
   treeShaking: true,
   outdir: 'dist',
   format: 'esm',

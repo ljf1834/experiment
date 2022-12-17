@@ -17,9 +17,8 @@
 		"dev": "cross-env NODE_ENV=development tsx scripts/build.ts",
 		"test": "node --experimental-loader ./dist/loader.js --trace-warnings ./test/index.ts"
 	},
-	"keywords": [],
 	"author": "",
-	"license": "ISC",
+	"license": "MIT",
 	"dependencies": {
 		"esbuild": "^0.15.16"
 	},
